@@ -1,5 +1,5 @@
 {
-    "name": "aragorn-yang/yy-onix-php",
+    "name": "eike-grundke/yy-onix-php",
     "description": "An ONIX parser library.",
     "type": "library",
     "keywords": [
@@ -7,11 +7,10 @@
         "XML",
         "parser"
     ],
-    "homepage": "https://github.com/aragorn-yang/yy-onix-php",
     "authors": [
         {
-            "name": "Aragorn Yang",
-            "homepage": "https://github.com/aragorn-yang",
+            "name": "Eike Grundke",
+            "homepage": "https://github.com/eike-grundke",
             "role": "Developer"
         }
     ],
