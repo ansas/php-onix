@@ -20,7 +20,7 @@ trait HasMeasures
     public function setMeasure(\SimpleXMLElement $xml): void
     {
         /** @var Measure $measure */
-        $measure = Measure::buildFromXml($xml, $this);
+        $measure          = Measure::buildFromXml($xml, $this);
         $this->measures[] = $measure;
         if ($measure->isHeight()) {
             $this->height = $measure;
@@ -33,43 +33,43 @@ trait HasMeasures
         }
     }
 
-    public function getHeightMeasurement(): float
+    public function getHeightMeasurement(): ?float
     {
-        return $this->height->getMeasurement();
+        return $this->height ? $this->height->getMeasurement() : null;
     }
 
-    public function getHeightUnit(): string
+    public function getHeightUnit(): ?string
     {
-        return $this->height->getMeasureUnitCode();
+        return $this->height ? $this->height->getMeasureUnitCode() : null;
     }
 
-    public function getWidthMeasurement(): float
+    public function getWidthMeasurement(): ?float
     {
-        return $this->width->getMeasurement();
+        return $this->width ? $this->width->getMeasurement() : null;
     }
 
-    public function getWidthUnit(): string
+    public function getWidthUnit(): ?string
     {
-        return $this->width->getMeasureUnitCode();
+        return $this->width ? $this->width->getMeasureUnitCode() : null;
     }
 
-    public function getThicknessMeasurement(): float
+    public function getThicknessMeasurement(): ?float
     {
-        return $this->thickness->getMeasurement();
+        return $this->thickness ? $this->thickness->getMeasurement() : null;
     }
 
-    public function getThicknessUnit(): string
+    public function getThicknessUnit(): ?string
     {
-        return $this->thickness->getMeasureUnitCode();
+        return $this->thickness ? $this->thickness->getMeasureUnitCode() : null;
     }
 
-    public function getWeightMeasurement(): float
+    public function getWeightMeasurement(): ?float
     {
-        return $this->weight->getMeasurement();
+        return $this->weight ? $this->weight->getMeasurement() : null;
     }
 
-    public function getWeightUnit(): string
+    public function getWeightUnit(): ?string
     {
-        return $this->weight->getMeasureUnitCode();
+        return $this->weight ? $this->weight->getMeasureUnitCode() : null;
     }
 }
