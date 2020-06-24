@@ -1,5 +1,5 @@
 {
-    "name": "eike-grundke/yy-onix-php",
+    "name": "ansas/php-onix",
     "description": "An ONIX parser library.",
     "type": "library",
     "keywords": [
@@ -8,6 +8,11 @@
         "parser"
     ],
     "authors": [
+        {
+            "name": "Aragorn Yang",
+            "homepage": "https://github.com/aragorn-yang",
+            "role": "Developer"
+        },
         {
             "name": "Eike Grundke",
             "homepage": "https://github.com/eike-grundke",
